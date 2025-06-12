@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboTech | Blog</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">RoboTech</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="../robots/">Robots</a>
+                <a href="#" class="active">Blog</a>
+                <a href="../shop/">Shop</a>
+                <a href="../auth/login.html" class="btn-login">Login</a>
+            </div>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1>RoboTech <span>Blog</span></h1>
+            <p>Latest news, tutorials, and insights from the robotics world</p>
+        </div>
+    </section>
+
+    <!-- Blog Filter -->
+    <section class="blog-filter">
+        <div class="container">
+            <div class="filter-options">
+                <button class="filter-btn active" data-category="all">All Articles</button>
+                <button class="filter-btn" data-category="news">Industry News</button>
+                <button class="filter-btn" data-category="tutorials">Tutorials</button>
+                <button class="filter-btn" data-category="research">Research</button>
+                <button class="filter-btn" data-category="opinion">Opinion</button>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search articles..." id="searchInput">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="posts-grid" id="postsContainer">
+                <!-- Blog posts will be loaded here by JavaScript -->
+            </div>
+            <div class="pagination">
+                <button id="prevBtn" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                <div class="page-numbers" id="pageNumbers"></div>
+                <button id="nextBtn">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Never Miss an Update</h2>
+            <p>Subscribe to our newsletter for the latest blog posts</p>
+            <form id="blogNewsletterForm">
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>RoboTech</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="/">Home</a>
+                    <a href="../robots/">Robots</a>
+                    <a href="#">Blog</a>
+                    <a href="../shop/">Shop</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>purubackend@gmail.com</p>
+                    <p>+91 9145660251</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
